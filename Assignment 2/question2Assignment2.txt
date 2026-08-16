@@ -1,0 +1,59 @@
+Define unshift(), shift() and split()
+
+.unshift() is used to add one or more items to the beginning of a list/array.
+.shift() is used to remove the first item from an array(list)
+.split() is used to divide a string into a list of items based off of a comma 
+
+For example, if we have an array defined for some of the topics we've learnt so far:
+
+const topics ["Functions", "Arrays", "JavaScript", "Loops"];
+
+//to use unshift & then print out the updated list
+
+topics.unshift("CSS basics")
+console.log(topics); 
+//output would be: CSS basics, Functions, Arrays, Javascript, Loops
+
+
+
+let topics ["Functions", "Arrays", "JavaScript", "Loops"];
+
+//to use shift & then print out the updated list
+
+topics.shift();
+console.log(topics); 
+//output would be: Arrays, Javascript, Loops
+
+
+
+//To use split, it will divide the list after every topic because of the commas so:
+
+let topics ["Functions", "Arrays", "JavaScript", "Loops"];
+let topicsArray = topics.split(",");
+console.log(topicsArray);
+
+//the output would be: ["Functions", "Arrays", "JavaScript", "Loops"] 
+
+2.2 
+Object methods : Is a function thats stored in an object so it can perform an action related to the object
+An example related to programming languages:
+
+//create a new Object and object methods for programming languages concept
+
+const programmingLanguages = {
+    firstLang: "JS",
+    secondLang: "Python",
+    displayLanguages: function () {
+        return `${this.firstLang} ${this.secondLang}`;
+    },
+};
+console.log(programmingLanguages.displayLanguages());
+
+2.3
+Explain the 'onmouseover' event
+- This is when the mouse hovers over a HTML element to do something and you
+use it for example in a button element so when the pointer goes over this button it does what is after the = <button onmouseover=""></button>
+
+Explain two other DOM events
+- 'onclick' events are when the mouse button presses onto a HTML element and then an action is done
+- 'onmouseout' event happens when the pointers goes away from the HT<L element, again in the <button onmouseout =Alert"('alert message)"> Message here </button>
